@@ -1,0 +1,22 @@
+{
+  "name": "benazetrobin_3_12052021",
+  "version": "1.0.0",
+  "description": "BENAZETRobin_3_12052021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robi-14/BENAZETRobin_3_12052021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Robi-14/BENAZETRobin_3_12052021/issues"
+  },
+  "homepage": "https://github.com/Robi-14/BENAZETRobin_3_12052021#readme",
+  "dependencies": {
+    "sass": "^1.32.12"
+  }
+}

@@ -1,0 +1,74 @@
+@import "./utils/_variables";
+@import "./utils/fonctions";
+@import "./utils/mixins";
+@import "./utils/placehorlders";
+
+@font-face {
+    font-family: "shrikhand";
+    src: url(Police/Shrikhand-Regular.otf);
+}
+@font-face {
+    font-family: "roboto";
+    src: url(Police/Roboto-Regular.ttf);
+}
+body{margin: 0; color: black; font-family: "roboto";}
+a{ text-decoration: none; color: black;}
+// header
+header{
+  
+    @include flexcenter;
+    height: 100px;
+    box-shadow: -4px 8px 12px 0px #c2c2c2;
+    position: relative;
+}
+// Main
+// Localisation
+#localisation{
+    @include flexcenter;
+    font-size: 38px;
+    font-family: "roboto";
+    background-color:#e1e1e1;
+    height: 130px;
+        
+        #lieu{ margin-left:30px;}
+
+}
+// Introduction
+.intro{
+
+    @include flexcenter;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ededed;
+   
+        &__container{
+            max-width: 100%;
+            @include flexcenter;
+            flex-direction: column;}
+  
+            &__tittle{
+            
+            font-size: 40px;
+            margin-bottom: 10px;
+            text-align: center;
+            max-width: 550px;
+            }
+            &__decouverte{
+            font-size: 39px;
+            text-align: center;
+            max-width: 800px;
+            }
+            &__explorer{
+                width: 300px;
+                
+                @include bouton;
+
+              
+
+
+            }
+
+
+
+        
+}

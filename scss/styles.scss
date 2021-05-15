@@ -67,67 +67,213 @@ header{
                 }
         }       
 }
+// Fonctionnement
 .fonctionnement{
     display: flex;
     flex-direction: column;
-    padding-left:80px;
+    padding-left:90px;
     width: 80%;
-    height: 600px;
+    height: 700px;
+    
+    
         
-        &__titre{
-            font-size: 30px;
-        }
-        &__cartes{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 500px;
-           
-        } 
-        &__carte{
+    &__titre{
+        padding-top: 40px;
+        font-size: 30px;
+    }
+    &__cartes{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
         
-            display: flex;
-            align-items: center;
-            width: 100%;
-            height: 200px;
-            border-radius: 30px;
-            margin-bottom: 40px;
-            background: #ededed;
-            box-shadow: #e1e1e1 5px 5px 13px 3px;
-             
-                &:hover{
-                    
-                    background:rgba($couleur-primaire, $alpha: .5);
-                  
-                }
-        }
-        &__nombre{
-            @include flexcenter;
-            position: absolute;
-            left: 60px;
-            border: 2px transparent solid;
-            background-color: $couleur-primaire;
-            border-radius: 20px;
-            width: 40px;
-            height: 40px;
-            font-size: 30px;
-        }
-        &__icone{
-            margin-left:90px;
-            font-size: 40px;
-            color: grey;
+    } 
+    &__carte{
+    
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        border-radius: 30px;
+        margin-bottom: 40px;
+        background: #ededed;
+        box-shadow: #e1e1e1 5px 5px 13px 3px;
             
+        &:hover{
+            
+            background:rgba($couleur-primaire, $alpha: .3);
+            box-shadow: #e1e1e1 5px 5px 26px 6px;
+            .fonctionnement__icone{
+                color: $couleur-primaire
+                
+            }
         }
-        &__texte{
-            margin-left: 60px;
-            font-size: 30px;
-            font-weight:bold ;
+    }
+    &__nombre{
+        @include flexcenter;
+        position: absolute;
+        left: 70px;
+        border: 2px transparent solid;
+        background-color: $couleur-primaire;
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+    }
+    &__icone{
+        margin-left:90px;
+        font-size: 40px;
+        color: grey;
+        
+    }
+    &__texte{
+        margin-left: 60px;
+        font-size: 30px;
+        font-weight:bold ;
+    }
+}
+// Restaurants
+.restaurants{
+    height: 2800px;
+    width: 100%;
+    margin-top: 60px;
+    background-color: #ededed;
+   
 
+    &__titre{
+        margin-left: 90px;
+        font-size: 30px;
+        padding-top: 60px;
+    }
+    &__cartes{
+        display: flex;
+        flex-direction: column;
+        margin-left: 90px;
+            
+        &__liens{
+            height: 580px;
+            width: 90%;
+            border-radius: 30px;
+            margin-bottom: 60px;
+            background-color: white;
+            box-shadow: #c2c2c2 5px 5px 5px 5px;
+
+            &__carte{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 580px;
+        
+
+                &__img{
+                    object-fit: cover;
+                    height: 400px;
+                    border-top-left-radius: 30px;
+                    border-top-right-radius: 30px;
+                }
+                &__texte{ 
+                    height:180px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    &__txt{
+                        width: 100%;
+                        height: 180px;
+                        
+                        &__titre{
+                            margin-bottom: 0;
+                            font-size: 40px;
+                            margin-left: 20px;
+                            margin-top: 40px;
+                        }
+                        &__lieux{
+                            font-size: 40px;
+                            margin-top: 10px;
+                            margin-left: 20px;
+                        } 
+                    }
+                    &__icone{
+                        font-size: 70px;
+                        margin-right: 40px;
+                            
+                    }
+                }
+            }
         }
+    }
+}
+
+// Footer
+.footer{
+    height: 450px;
+    background-color:#353535;
+  
+   &__titre{
+        color: white;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 90px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        font-family: "shrikhand";
+        font-size: 50px;
+    }
+    &__menu{
+        margin-left:  90px;
+        margin-top: 0;
+        padding: 0;
+        
+        &__list{
+            list-style: none;
+            margin-top: 0;
+            font-size: 40px;
+            margin-bottom: 15px;
+           
+            &__liens{
+                color: white;
+
+                &__icone{
+                    padding-right: 20px;
+                }
+                &__iconehand{
+                    font-size: 25px;
+                    padding-right: 20px;
+                }
+            }   
+        }
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
 
        
 
 
 
 
-}

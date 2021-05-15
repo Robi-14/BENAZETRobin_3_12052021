@@ -21,4 +21,5 @@
 @mixin bouton__hover {
     opacity: 0.7;
     transition: 1s;
+    box-shadow: 2px 2px 20px black;
 }

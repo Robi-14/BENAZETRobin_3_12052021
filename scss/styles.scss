@@ -44,31 +44,90 @@ header{
         &__container{
             max-width: 100%;
             @include flexcenter;
-            flex-direction: column;}
+            flex-direction: column;
+        }
   
-            &__tittle{
+        &__tittle{
             
-            font-size: 40px;
+            font-size: 45px;
             margin-bottom: 10px;
             text-align: center;
             max-width: 550px;
-            }
-            &__decouverte{
-            font-size: 39px;
+        }
+        &__decouverte{
+            font-size: 27px;
             text-align: center;
             max-width: 800px;
-            }
-            &__explorer{
-                width: 300px;
-                
-                @include bouton;
-
-              
-
-
-            }
-
-
-
+        }
+        &__explorer{
+            width: 300px;
+            @include bouton;
+                &:hover{
+                    @include bouton__hover
+                }
+        }       
+}
+.fonctionnement{
+    display: flex;
+    flex-direction: column;
+    padding-left:80px;
+    width: 80%;
+    height: 600px;
         
+        &__titre{
+            font-size: 30px;
+        }
+        &__cartes{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 500px;
+           
+        } 
+        &__carte{
+        
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 200px;
+            border-radius: 30px;
+            margin-bottom: 40px;
+            background: #ededed;
+            box-shadow: #e1e1e1 5px 5px 13px 3px;
+             
+                &:hover{
+                    
+                    background:rgba($couleur-primaire, $alpha: .5);
+                  
+                }
+        }
+        &__nombre{
+            @include flexcenter;
+            position: absolute;
+            left: 60px;
+            border: 2px transparent solid;
+            background-color: $couleur-primaire;
+            border-radius: 20px;
+            width: 40px;
+            height: 40px;
+            font-size: 30px;
+        }
+        &__icone{
+            margin-left:90px;
+            font-size: 40px;
+            color: grey;
+            
+        }
+        &__texte{
+            margin-left: 60px;
+            font-size: 30px;
+            font-weight:bold ;
+
+        }
+
+       
+
+
+
+
 }

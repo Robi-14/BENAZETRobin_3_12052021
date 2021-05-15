@@ -17,3 +17,8 @@
     margin-bottom: 80px;
     box-shadow: 2px 2px 10px  black;
 }
+
+@mixin bouton__hover {
+    opacity: 0.7;
+    transition: 1s;
+}

@@ -171,6 +171,20 @@ header{
                     border-top-left-radius: 30px;
                     border-top-right-radius: 30px;
                 }
+                &__news{
+                    @include flexcenter;
+                    position: absolute;
+                    bottom: 300px;
+                    right: 110px;
+                    height: 80px;
+                    background-color: $couleur-tertiaire;
+                    width: 200px ;
+
+                    &__txt{
+                        font-size: 40px;
+                        color:darken($couleur-tertiaire, $amount: 35);
+                    }
+                }
                 &__texte{ 
                     height:180px;
                     width: 100%;
@@ -196,9 +210,7 @@ header{
                         } 
                     }
                     &__icone{
-                        font-size: 70px;
-                        margin-right: 40px;
-                            
+                        @include coeur       
                     }
                 }
             }

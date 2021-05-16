@@ -23,3 +23,26 @@
     transition: 1s;
     box-shadow: 2px 2px 20px black;
 }
+
+@mixin coeur{
+    display: flex;
+    font-size: 70px;
+    margin-right: 40px;
+    color: transparent;
+    -webkit-text-stroke: black 2px;
+    opacity: 0.6;
+    &:hover{
+        -webkit-background-clip: text;
+        background-image: $degrade-coeur;
+        transition: all ease-in-out 3s ;
+        opacity: 1;
+        -webkit-text-stroke: black 0px;
+}
+}
+@mixin coeur_hover {
+    -webkit-background-clip: text;
+    background-image: $degrade-coeur;
+    transition: all ease-in-out 3s ;
+    opacity: 1;
+    -webkit-text-stroke: black 0px;  
+}

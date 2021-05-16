@@ -13,6 +13,30 @@
 }
 body{margin: 0; color: black; font-family: "roboto";}
 a{ text-decoration: none; color: black;}
+//loader
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    @include flexcenter;
+    z-index: 20;
+    animation: loading linear 3s;
+    visibility: hidden;
+    &__lettre{
+        color: #484848;
+        font-size: 80px;
+        font-family: "shrikhand";
+        letter-spacing: 2px;
+        animation: flash linear 1.9s infinite;
+        @for $i from 1 through $num-lettre {
+            &--#{$i}{
+                animation-delay: 0.1s*$i
+            }
+            
+        }
+    }
+}
 // header
 header{
   
@@ -20,6 +44,7 @@ header{
     height: 100px;
     box-shadow: -4px 8px 12px 0px #c2c2c2;
     position: relative;
+
 }
 // Main
 // Localisation
@@ -30,37 +55,46 @@ header{
     background-color:#e1e1e1;
     height: 130px;
         
-        #lieu{ margin-left:30px;}
+    #lieu{ margin-left:30px;}
 
 }
 // Introduction
 .intro{
 
     @include flexcenter;
+    justify-content: flex-start;
     flex-direction: column;
     width: 100%;
+    height:600px;
     background-color: #ededed;
+   
    
         &__container{
             max-width: 100%;
+            height: 550px;
             @include flexcenter;
             flex-direction: column;
         }
   
         &__tittle{
-            
-            font-size: 45px;
+            font-size: 50px;
             margin-bottom: 10px;
             text-align: center;
             max-width: 550px;
         }
         &__decouverte{
-            font-size: 27px;
+            font-size: 40px;
             text-align: center;
             max-width: 800px;
         }
+        &__liens{
+        width: 100%;
+        height: 130px;
+        @include flexcenter;
+        }
         &__explorer{
-            width: 300px;
+            width: 100%;
+            height: 100%;
             @include bouton;
                 &:hover{
                     @include bouton__hover
@@ -172,18 +206,16 @@ header{
                     border-top-right-radius: 30px;
                 }
                 &__news{
+                    @include nouveaute
+                }
+                &__news1{ 
                     @include flexcenter;
-                    position: absolute;
-                    bottom: 300px;
+                    @include nouveaute;
+                    bottom: -400px;
                     right: 110px;
                     height: 80px;
-                    background-color: $couleur-tertiaire;
-                    width: 200px ;
-
-                    &__txt{
-                        font-size: 40px;
-                        color:darken($couleur-tertiaire, $amount: 35);
-                    }
+                    
+                   
                 }
                 &__texte{ 
                     height:180px;
@@ -256,8 +288,6 @@ header{
                 }
             }   
         }
-
-
 
     }
 }

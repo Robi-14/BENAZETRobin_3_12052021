@@ -38,13 +38,22 @@ a{ text-decoration: none; color: black;}
     }
 }
 // header
-header{
+.header{
   
     @include flexcenter;
-    height: 100px;
     box-shadow: -4px 8px 12px 0px #c2c2c2;
-    position: relative;
-
+    
+    &__logo{
+        @include flexcenter;
+        height: 100px;
+        position: relative;
+    }
+    &__icone{
+     position: absolute;
+     left: 80px;
+     font-size: 40px;
+     visibility: hidden;
+    }
 }
 // Main
 // Localisation

@@ -37,13 +37,7 @@
         -webkit-text-stroke: black 0px;
 }
 }
-@mixin coeur_hover {
-    -webkit-background-clip: text;
-    background-image: $degrade-coeur;
-    transition: all ease-in-out 3s ;
-    opacity: 1;
-    -webkit-text-stroke: black 0px;  
-}
+
 @mixin nouveaute {
     @include flexcenter;
     position: absolute;
@@ -86,3 +80,26 @@
         visibility: hidden;
     }
 }
+@keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes slide-top {
+    0% {opacity: 0;
+        visibility:visible;
+      -webkit-transform: translateY(60px);
+              transform: translateY(60px);
+    }
+    100% {opacity: 1;
+        visibility: visible;
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+   
+  }

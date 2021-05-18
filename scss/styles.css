@@ -88,13 +88,24 @@ a {
   animation-delay: 0.8s;
 }
 
-header {
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -4px 8px 12px 0px #c2c2c2;
+}
+.header__logo {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
-  box-shadow: -4px 8px 12px 0px #c2c2c2;
   position: relative;
+}
+.header__icone {
+  position: absolute;
+  left: 80px;
+  font-size: 40px;
+  visibility: hidden;
 }
 
 #localisation {

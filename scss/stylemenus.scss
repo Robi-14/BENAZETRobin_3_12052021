@@ -30,7 +30,7 @@ a{ text-decoration: none; color: black;}
      font-size: 40px;
     }
 }
-main{height: 3550px;}
+main{height: 3450px; display: flex;}
 .presentation{
     width: 100%;
     height: 600px;
@@ -45,7 +45,7 @@ main{height: 3550px;}
 .menu{
     background-color: #ededed;
     width: 100%;
-    height: 3050px;
+    height: 2950px;
     border-top-right-radius:100px ;
     border-top-left-radius: 100px;
     position: absolute;
@@ -115,6 +115,7 @@ main{height: 3550px;}
                 &__liens{
                     display: flex;
                     flex-direction: row;
+                    cursor: pointer;
                     height: 170px;
                     width: 90%;
                     box-shadow: #c2c2c2 5px 5px 5px 5px;
@@ -179,6 +180,15 @@ main{height: 3550px;}
                                 text-overflow: ellipsis;
                                 overflow: hidden;
                             }
+                            &__nomligne{
+                                overflow: initial;
+                                text-overflow: initial;
+                                width: 600px;
+                              
+                              
+                                
+                               
+                            }
                             &__description{
                                 font-size: 37px;
                                 margin-top: 10px;
@@ -200,14 +210,35 @@ main{height: 3550px;}
                             }  
                         }
                     }
+                    &__platsprix{
+                        &__plats4{
+
+                        white-space: normal;}
+                        &__noms {
+                            overflow: initial;
+                            text-overflow: initial;
+                            max-width: 600px;}
+                        
+                    }
                     &__slide{
                     
                         visibility: hidden;
                     }                       
                 }
+                
+                &__liens4{
+                    height: 215px;
+                }
             }
             &__plats4{
-                height:800px
+                height: 815px;
+            }
+            
+        }
+        &__catégoriespé{
+            
+            &__plats{
+                height:  645px;
             }
         }
     }
@@ -227,7 +258,12 @@ main{height: 3550px;}
 
     }
 }
+.menu4{height: 3000px;
+top: 56px;}
+
+
 .footer{
+    
     height: 450px;
     background-color:#353535;
   

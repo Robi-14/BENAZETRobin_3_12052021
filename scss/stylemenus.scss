@@ -347,9 +347,23 @@ background-position-y:-100px;
             flex-direction: row;
             width: 90%;
             justify-content: space-between;
-        }
-    }
+            &__list{
+                
+               
+                &__liens{
+                    
     
+                    &__icone{
+                        padding-right: 5px;
+                    }
+                    &__iconehand{
+                      
+                        padding-right: 5px;
+                    }
+                }   
+            } 
+        }
+    }    
 }
 
 @media  screen and (min-width: 1024px ) {

@@ -29,7 +29,7 @@
     color: transparent;
     -webkit-text-stroke: black 2px;
     opacity: 0.6;
-    padding-right:10px ;
+    padding-right:20px ;
     &:hover{
         -webkit-background-clip: text;
         background-image: $degrade-coeur;
@@ -48,11 +48,11 @@
     &__txt{
         font-size: 20px;
         color:darken($couleur-tertiaire, $amount: 35);
-        padding: 10px;
+        padding: 5px;
         text-align: center;
         width: 100px;
         margin: 0;
-        right: 25px;
+        right: 20px;
         top: 15px;
         position: absolute;
         background-color: $couleur-tertiaire;

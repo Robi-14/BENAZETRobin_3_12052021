@@ -79,59 +79,105 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 60px;
+  position: relative;
+  width: 100%;
+}
+.header__logo__img {
+  width: 200px;
 }
 .header__icone {
   position: absolute;
-  left: 80px;
-  font-size: 40px;
+  left: 20px;
+  font-size: 20px;
 }
 
-main {
-  height: 3450px;
-  display: flex;
+.presentationenchanté {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/img/La_note_enchantée.jpg);
+  background-position-y: -85px;
+  background-position-x: 0;
 }
 
-.presentation {
+.presentationfrancaise {
   width: 100%;
-  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/img/A_la_francaise.jpg);
+  background-position-y: 0px;
+  background-position-x: -30px;
 }
-.presentation__img {
-  object-fit: cover;
-  height: 600px;
+
+.presentationlapalette {
   width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/img/La_palette_du_gout.jpg);
+  background-position-x: -30px;
+  margin: 0;
+  height: 250px;
+}
+
+.presentationenchanté {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/img/La_note_enchantée.jpg);
+  margin: 0;
+  height: 250px;
+  background-position-y: -100px;
+}
+
+.presentationfrancaise {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/img/A_la_francaise.jpg);
+  margin: 0;
+  height: 250px;
+  background-position-y: -5px;
+}
+
+.presentationlesdelices {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/img/Le_delice_des_sens.jpg);
+  margin: 0;
+  height: 250px;
 }
 
 .menu {
   background-color: #ededed;
   width: 100%;
-  height: 2950px;
-  border-top-right-radius: 100px;
-  border-top-left-radius: 100px;
-  position: absolute;
-  top: 600px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  margin-top: -55px;
 }
 .menu__pres {
-  margin-left: 70px;
-  padding-top: 40px;
+  margin-left: 30px;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
 }
 .menu__pres__titre {
-  font-size: 60px;
+  font-size: 25px;
   font-family: "shrikhand";
 }
 .menu__pres__icone {
   display: flex;
-  font-size: 70px;
-  margin-right: 40px;
+  font-size: 40px;
+  margin-right: 0px;
   color: transparent;
   -webkit-text-stroke: black 2px;
   opacity: 0.6;
-  padding-right: 80px;
-  font-size: 80px;
+  padding-right: 10px;
+  padding-right: 30px;
+  font-size: 30px;
 }
 .menu__pres__icone:hover {
   -webkit-background-clip: text;
@@ -141,8 +187,7 @@ main {
   -webkit-text-stroke: black 0px;
 }
 .menu__carte {
-  margin-left: 70px;
-  height: 2450px;
+  margin-left: 30px;
   display: flex;
   flex-direction: column;
 }
@@ -150,41 +195,39 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 950px;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 .menu__carte__catégorie__menus {
   height: 60px;
-  margin-bottom: 40px;
 }
 .menu__carte__catégorie__menus__titre {
-  font-size: 38px;
+  font-size: 25px;
   margin-top: 10px;
   font-weight: normal;
 }
 .menu__carte__catégorie__menus__titre::after {
   content: "";
   display: block;
-  width: 100px;
+  width: 60px;
   height: 4px;
   background-color: #99e2d0;
 }
 .menu__carte__catégorie__plats {
   display: flex;
   flex-direction: column;
-  height: 600px;
   width: 100%;
   margin-bottom: 20px;
   justify-content: space-between;
 }
 .menu__carte__catégorie__plats__liens {
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
   cursor: pointer;
-  height: 170px;
+  height: 78px;
   width: 90%;
   box-shadow: #c2c2c2 5px 5px 5px 5px;
-  border-radius: 35px;
+  border-radius: 20px;
   background-color: white;
   justify-content: space-between;
   animation: slide-top linear 0.5s both;
@@ -221,22 +264,22 @@ main {
   animation-delay: 5s;
 }
 .menu__carte__catégorie__plats__liens:hover .menu__carte__catégorie__plats__liens__platsprix__prix {
-  padding-right: 20px;
+  padding-right: 0px;
   transition: 0.5s ease;
 }
 .menu__carte__catégorie__plats__liens:hover .menu__carte__catégorie__plats__liens__slide {
   visibility: visible;
   animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  border-top-right-radius: 35px;
-  border-bottom-right-radius: 35px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   background-color: #99e2d0;
-  width: 200px;
+  width: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .menu__carte__catégorie__plats__liens:hover .menu__carte__catégorie__plats__liens__slide__icone {
-  font-size: 35px;
+  font-size: 25px;
   animation: rotate-center 0.4s ease-in-out both;
   color: white;
 }
@@ -249,15 +292,15 @@ main {
   height: 100%;
 }
 .menu__carte__catégorie__plats__liens__platsprix__plats {
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 .menu__carte__catégorie__plats__liens__platsprix__plats__nom {
-  font-size: 40px;
-  margin-top: 30px;
-  margin-bottom: 0%;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 0px;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -267,22 +310,21 @@ main {
   width: 600px;
 }
 .menu__carte__catégorie__plats__liens__platsprix__plats__description {
-  font-size: 37px;
-  margin-top: 10px;
+  font-size: 15px;
+  margin-top: 5px;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .menu__carte__catégorie__plats__liens__platsprix__prix {
-  height: 150px;
-  font-size: 40px;
-  display: flex;
-  align-items: flex-end;
+  font-size: 15px;
   margin-left: 15px;
 }
 .menu__carte__catégorie__plats__liens__platsprix__prix__euros {
-  padding-right: 20px;
+  padding-right: 0px;
   margin-bottom: 25px;
   font-weight: bold;
+  position: relative;
+  bottom: -28px;
 }
 .menu__carte__catégorie__plats__liens__platsprix__plats4 {
   white-space: normal;
@@ -295,31 +337,21 @@ main {
 .menu__carte__catégorie__plats__liens__slide {
   visibility: hidden;
 }
-.menu__carte__catégorie__plats__liens4 {
-  height: 215px;
-}
-.menu__carte__catégorie__plats4 {
-  height: 815px;
-}
-.menu__carte__catégoriespé__plats {
-  height: 645px;
-}
 .menu__bouton {
   width: 90%;
-  height: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  padding-bottom: 80px;
 }
 .menu__bouton__commander {
   border-radius: 60px;
-  height: 100px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
-  width: 500px;
+  font-size: 20px;
+  width: 250px;
   color: white;
   background: linear-gradient(to bottom right, #ff79da, #9356DC);
   box-shadow: 2px 2px 10px black;
@@ -330,34 +362,29 @@ main {
   box-shadow: 2px 2px 20px black;
 }
 
-.menu4 {
-  height: 3000px;
-  top: 56px;
-}
-
 .footer {
-  height: 450px;
+  height: 300px;
   background-color: #353535;
 }
 .footer__titre {
   color: white;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 90px;
+  margin-left: 20px;
   padding-top: 50px;
   padding-bottom: 40px;
   font-family: "shrikhand";
-  font-size: 50px;
+  font-size: 30px;
 }
 .footer__menu {
-  margin-left: 90px;
+  margin-left: 20px;
   margin-top: 0;
   padding: 0;
 }
 .footer__menu__list {
   list-style: none;
   margin-top: 0;
-  font-size: 40px;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 .footer__menu__list__liens {
@@ -369,6 +396,67 @@ main {
 .footer__menu__list__liens__iconehand {
   font-size: 25px;
   padding-right: 20px;
+}
+
+@media screen and (min-width: 345px) {
+  .presentationlapalette {
+    background-position-x: 0;
+    max-width: 100%;
+    height: 350px;
+    background-position: center;
+    max-height: 100%;
+  }
+
+  .presentationlesdelices {
+    background-position-x: 0;
+    max-width: 100%;
+    height: 350px;
+    background-position: center;
+    max-height: 100%;
+  }
+
+  .presentationenchanté {
+    background-position-y: 0;
+    max-width: 100%;
+    height: 350px;
+    background-position: center;
+    max-height: 100%;
+  }
+
+  .presentationfrancaise {
+    background-position-y: 0;
+    max-width: 100%;
+    height: 350px;
+    background-position: center;
+    max-height: 100%;
+  }
+
+  .menu {
+    margin-top: -40px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer__menu {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__carte {
+    flex-direction: row;
+  }
+
+  .menu__carte__catégoriespé {
+    width: 40%;
+  }
 }
 
 /*# sourceMappingURL=stylemenus.css.map */

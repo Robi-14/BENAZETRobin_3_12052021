@@ -21,57 +21,98 @@ a{ text-decoration: none; color: black;}
     
     &__logo{
         @include flexcenter;
-        height: 100px;
+        height: 60px;
+        position: relative;
+        width: 100%;
+        &__img{
+            width: 200px;
+        }
+        
 
     }
     &__icone{
      position: absolute;
-     left: 80px;
-     font-size: 40px;
+     left: 20px;
+     font-size: 20px;
     }
 }
-main{height: 3450px; display: flex;}
-.presentation{
-    width: 100%;
-    height: 600px;
 
-    &__img{
-        object-fit: cover;
-        height: 600px;
-        width: 100%;
-    }
+
+.presentationenchanté{
+    @include presentation;
+    background-image: url(/img/La_note_enchantée.jpg);
+    background-position-y:-85px; 
+    background-position-x: 0 ;
+   
+}
+    
+.presentationfrancaise{
+    @include presentation;
+    background-image: url(/img/A_la_francaise.jpg);
+    background-position-y:0px; 
+    background-position-x: -30px;
+    
+    
+}
+.presentationlapalette{
+    @include presentation;
+    background-image: url(/img/La_palette_du_gout.jpg);
+    background-position-x:-30px ;
+    margin:0;
+    height:250px;
+
 
 }
+.presentationenchanté{
+@include presentation;
+background-image: url(/img/La_note_enchantée.jpg);
+margin:0;
+height: 250px;
+background-position-y:-100px; 
+}
+.presentationfrancaise{
+    @include presentation;
+    background-image: url(/img/A_la_francaise.jpg);
+    margin: 0;
+    height: 250px;
+    background-position-y:-05px; 
+}
+.presentationlesdelices{
+    @include presentation;
+    background-image: url(/img/Le_delice_des_sens.jpg);
+    margin:0;
+    height: 250px;
+}
+
 .menu{
     background-color: #ededed;
     width: 100%;
-    height: 2950px;
-    border-top-right-radius:100px ;
-    border-top-left-radius: 100px;
-    position: absolute;
-    top: 600px;
-
+    border-top-right-radius:50px ;
+    border-top-left-radius: 50px;
+    margin-top: -55px;
+    
+    
+    
     &__pres{
-        margin-left: 70px;
-        padding-top: 40px;
+        margin-left: 30px;
+        padding-top: 10px;
         @include flexcenter;
         justify-content: space-between;
         
         
         &__titre{
-            font-size: 60px;
+            font-size: 25px;
             font-family: "shrikhand";
 
         }
         &__icone{
             @include coeur;
-            padding-right: 80px;
-            font-size: 80px;
+            padding-right: 30px;
+            font-size: 30px;
         }
     }
     &__carte{
-        margin-left: 70px;
-        height: 2450px;
+        margin-left: 30px;
         display: flex;
         flex-direction: column;
         
@@ -79,24 +120,23 @@ main{height: 3450px; display: flex;}
             display: flex;
             flex-direction: column;
             width: 100%;
-            height: 950px;
-            margin-bottom: 60px;
+            margin-bottom: 10px;
             
             
 
             &__menus{ 
                 height: 60px;
-                margin-bottom: 40px;
+                
 
                 &__titre{
-                    font-size: 38px;
+                    font-size: 25px;
                     margin-top: 10px;
                     font-weight: normal;
                     
                     &::after{
                         content: "";
                         display: block;
-                        width: 100px;
+                        width: 60px;
                         height: 4px;
                         background-color: $couleur-tertiaire;
                     }
@@ -105,7 +145,6 @@ main{height: 3450px; display: flex;}
             &__plats{
                 display: flex;
                 flex-direction: column;
-                height:600px;
                 width: 100%;
                 margin-bottom: 20px;
                 justify-content: space-between;
@@ -113,13 +152,14 @@ main{height: 3450px; display: flex;}
                 
 
                 &__liens{
+                    margin-bottom: 30px;
                     display: flex;
                     flex-direction: row;
                     cursor: pointer;
-                    height: 170px;
+                    height: 78px;
                     width: 90%;
                     box-shadow: #c2c2c2 5px 5px 5px 5px;
-                    border-radius: 35px;
+                    border-radius: 20px;
                     background-color: white;
                     justify-content: space-between;
                     animation: slide-top linear .5s  both;
@@ -135,7 +175,7 @@ main{height: 3450px; display: flex;}
                     &:hover{
 
                         .menu__carte__catégorie__plats__liens__platsprix__prix{
-                           padding-right: 20px;
+                           padding-right: 00px;
                             transition: 0.5s ease;
                         }
                     }
@@ -144,14 +184,14 @@ main{height: 3450px; display: flex;}
                         .menu__carte__catégorie__plats__liens__slide{
                             visibility: visible;
 	                        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	                        border-top-right-radius: 35px;
-                            border-bottom-right-radius: 35px; 
+	                        border-top-right-radius: 20px;
+                            border-bottom-right-radius: 20px; 
                             background-color: $couleur-tertiaire;
-                            width: 200px;
+                            width: 80px;
                             @include flexcenter;
                           
                             &__icone{
-                                font-size: 35px;
+                                font-size: 25px;
                                 animation: rotate-center 0.4s ease-in-out both;
                                 color: white;
                             }
@@ -167,16 +207,16 @@ main{height: 3450px; display: flex;}
                            
                         &__plats{
                             
-                            margin-left: 30px;
+                            margin-left: 10px;
                             display: flex;
                             flex-direction: column;
                             overflow: hidden;
-                    
+                            
                             &__nom{
                                 
-                                font-size: 40px;
-                                margin-top: 30px;
-                                margin-bottom: 0%;
+                                font-size: 18px;
+                                margin-top: 15px;
+                                margin-bottom: 0px;
                                 text-overflow: ellipsis;
                                 overflow: hidden;
                             }
@@ -190,23 +230,23 @@ main{height: 3450px; display: flex;}
                                
                             }
                             &__description{
-                                font-size: 37px;
-                                margin-top: 10px;
+                                font-size: 15px;
+                                margin-top: 5px;
                                 text-overflow: ellipsis;
                                 overflow: hidden;
                                
                             }
                         }
                         &__prix{
-                        height:150px ;
-                        font-size: 40px;
-                        display: flex;
-                        align-items: flex-end;
+                        
+                        font-size: 15px;
                         margin-left: 15px;
                             &__euros{
-                                padding-right: 20px;
+                                padding-right: 0px;
                                 margin-bottom: 25px;
                                 font-weight: bold;
+                                position: relative;
+                                bottom: -28px;
                             }  
                         }
                     }
@@ -225,28 +265,16 @@ main{height: 3450px; display: flex;}
                         visibility: hidden;
                     }                       
                 }
-                
-                &__liens4{
-                    height: 215px;
-                }
-            }
-            &__plats4{
-                height: 815px;
-            }
-            
+            }    
+               
         }
-        &__catégoriespé{
-            
-            &__plats{
-                height:  645px;
-            }
-        }
+      
     }
     &__bouton{
         width: 90%;
-        height: 130px;
         @include flexcenter;
-        margin-top: 30px;
+        
+        padding-bottom: 80px;
          
         &__commander{
             @include bouton;
@@ -257,35 +285,33 @@ main{height: 3450px; display: flex;}
         }
 
     }
+
 }
-.menu4{height: 3000px;
-top: 56px;}
 
 
 .footer{
-    
-    height: 450px;
+    height: 300px;
     background-color:#353535;
   
    &__titre{
         color: white;
         margin-top: 0;
         margin-bottom: 0;
-        margin-left: 90px;
+        margin-left: 20px;
         padding-top: 50px;
         padding-bottom: 40px;
         font-family: "shrikhand";
-        font-size: 50px;
+        font-size: 30px;
     }
     &__menu{
-        margin-left:  90px;
+        margin-left:  20px;
         margin-top: 0;
         padding: 0;
         
         &__list{
             list-style: none;
             margin-top: 0;
-            font-size: 40px;
+            font-size: 20px;
             margin-bottom: 15px;
            
             &__liens{
@@ -301,5 +327,37 @@ top: 56px;}
             }   
         }
 
+    }
+}
+@media  screen and (min-width: 345px) {
+    .presentationlapalette { background-position-x: 0;  max-width: 100%;height:350px;background-position: center;max-height: 100%;
+}
+    .presentationlesdelices{ background-position-x: 0;  max-width: 100%;height:350px;background-position: center;max-height: 100%;}
+    .presentationenchanté{background-position-y: 0;  max-width: 100%;height:350px;background-position: center;max-height: 100%;}
+    .presentationfrancaise{background-position-y: 0;  max-width: 100%;height:350px;background-position: center;max-height: 100%;}
+    .menu{margin-top: -40px;}
+
+}
+@media screen and (min-width:600px) {
+    .footer{
+        @include flexcenter;
+        flex-direction:column;
+        &__menu{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            justify-content: space-between;
+        }
+    }
+    
+}
+
+@media  screen and (min-width: 1024px ) {
+    .menu__carte{
+        flex-direction: row;
+      
+    }
+    .menu__carte__catégoriespé{
+        width: 40%;
     }
 }

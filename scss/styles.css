@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes flash {
   0% {
     color: #9356DC;
@@ -82,7 +83,7 @@ a {
 }
 .loader__lettre {
   color: #484848;
-  font-size: 80px;
+  font-size: 50px;
   font-family: "shrikhand";
   letter-spacing: 2px;
   animation: flash linear 1.9s infinite;
@@ -124,6 +125,10 @@ a {
   align-items: center;
   height: 100px;
   position: relative;
+  width: 100%;
+}
+.header__logo__img {
+  width: 200px;
 }
 .header__icone {
   position: absolute;
@@ -136,10 +141,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 38px;
+  font-size: 25px;
   font-family: "roboto";
   background-color: #e1e1e1;
-  height: 130px;
+  height: 100px;
 }
 #localisation #lieu {
   margin-left: 30px;
@@ -152,11 +157,11 @@ a {
   justify-content: flex-start;
   flex-direction: column;
   width: 100%;
-  height: 600px;
+  height: 300px;
   background-color: #ededed;
 }
 .intro__container {
-  max-width: 100%;
+  width: 90%;
   height: 550px;
   display: flex;
   justify-content: center;
@@ -164,13 +169,13 @@ a {
   flex-direction: column;
 }
 .intro__tittle {
-  font-size: 50px;
+  font-size: 25px;
   margin-bottom: 10px;
   text-align: center;
   max-width: 550px;
 }
 .intro__decouverte {
-  font-size: 40px;
+  font-size: 15px;
   text-align: center;
   max-width: 800px;
 }
@@ -182,15 +187,15 @@ a {
   align-items: center;
 }
 .intro__explorer {
-  width: 100%;
+  width: 50%;
   height: 100%;
   border-radius: 60px;
-  height: 100px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
-  width: 500px;
+  font-size: 20px;
+  width: 250px;
   color: white;
   background: linear-gradient(to bottom right, #ff79da, #9356DC);
   box-shadow: 2px 2px 10px black;
@@ -204,27 +209,28 @@ a {
 .fonctionnement {
   display: flex;
   flex-direction: column;
-  padding-left: 90px;
-  width: 80%;
-  height: 700px;
+  width: 90%;
+  height: 420px;
+  margin-left: 20px;
 }
 .fonctionnement__titre {
   padding-top: 40px;
-  font-size: 30px;
+  font-size: 20px;
 }
 .fonctionnement__cartes {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 500px;
+  height: 350px;
+  margin-bottom: 40px;
 }
 .fonctionnement__carte {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 200px;
-  border-radius: 30px;
-  margin-bottom: 40px;
+  height: 80px;
+  border-radius: 20px;
+  margin-bottom: 20px;
   background: #ededed;
   box-shadow: #e1e1e1 5px 5px 13px 3px;
 }
@@ -239,45 +245,45 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 70px;
+  position: relative;
+  left: -10px;
   border: 2px transparent solid;
   background-color: #9356DC;
   border-radius: 20px;
-  width: 40px;
-  height: 40px;
-  font-size: 30px;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
 }
 .fonctionnement__icone {
-  margin-left: 90px;
-  font-size: 40px;
+  margin-left: 30px;
+  font-size: 25px;
   color: grey;
 }
 .fonctionnement__texte {
-  margin-left: 60px;
-  font-size: 30px;
+  margin-left: 20px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .restaurants {
-  height: 2800px;
+  height: 1400px;
   width: 100%;
   margin-top: 60px;
   background-color: #ededed;
 }
 .restaurants__titre {
-  margin-left: 90px;
-  font-size: 30px;
-  padding-top: 60px;
+  margin-left: 20px;
+  font-size: 20px;
+  padding-top: 40px;
 }
 
 .restaurant__cartes {
   display: flex;
   flex-direction: column;
-  margin-left: 90px;
+  margin-left: 20px;
 }
 .restaurant__cartes__liens {
-  height: 580px;
+  height: 250px;
   width: 90%;
   border-radius: 30px;
   margin-bottom: 60px;
@@ -288,16 +294,12 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 580px;
-}
-.restaurant__cartes__liens__carte__pres {
-  width: 100%;
-  height: 400px;
+  height: 250px;
 }
 .restaurant__cartes__liens__carte__pres__img {
   object-fit: cover;
   width: 100%;
-  height: 400px;
+  height: 180px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
@@ -305,83 +307,45 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 240px;
-  right: 110px;
-  height: 80px;
+  height: 40px;
   background-color: #99e2d0;
-  width: 200px;
+  width: 100px;
+  top: 20px;
+  left: 200px;
+  position: relative;
 }
 .restaurant__cartes__liens__carte__pres__news__txt {
-  font-size: 40px;
+  font-size: 20px;
   color: #2c9c81;
 }
-.restaurant__cartes__liens__carte__pres__news1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 240px;
-  right: 110px;
-  height: 80px;
-  background-color: #99e2d0;
-  width: 200px;
-  position: absolute;
-  bottom: -400px;
-  right: 110px;
-  height: 80px;
+.restaurant__cartes__liens__carte__preslapallette {
+  background-image: url(/img/La_palette_du_gout.jpg);
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-position-y: -50px;
+  background-repeat: no-repeat;
 }
-.restaurant__cartes__liens__carte__pres__news1__txt {
-  font-size: 40px;
-  color: #2c9c81;
+.restaurant__cartes__liens__carte__preslanote {
+  background-image: url(/img/La_note_enchantée.jpg);
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-position-y: -135px;
+  background-repeat: no-repeat;
 }
 .restaurant__cartes__liens__carte__img {
   object-fit: cover;
-  height: 400px;
+  height: 180px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
-.restaurant__cartes__liens__carte__news {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 240px;
-  right: 110px;
-  height: 80px;
-  background-color: #99e2d0;
-  width: 200px;
-}
-.restaurant__cartes__liens__carte__news__txt {
-  font-size: 40px;
-  color: #2c9c81;
-}
-.restaurant__cartes__liens__carte__news1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 240px;
-  right: 110px;
-  height: 80px;
-  background-color: #99e2d0;
-  width: 200px;
-  bottom: -400px;
-  right: 110px;
-  height: 80px;
-}
-.restaurant__cartes__liens__carte__news1__txt {
-  font-size: 40px;
-  color: #2c9c81;
-}
 .restaurant__cartes__liens__carte__texte {
-  height: 180px;
+  height: 60px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -394,22 +358,23 @@ a {
 }
 .restaurant__cartes__liens__carte__texte__txt__titre {
   margin-bottom: 0;
-  font-size: 40px;
-  margin-left: 20px;
-  margin-top: 40px;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
 }
 .restaurant__cartes__liens__carte__texte__txt__lieux {
-  font-size: 40px;
-  margin-top: 10px;
-  margin-left: 20px;
+  font-size: 20px;
+  margin-top: 2px;
+  margin-left: 10px;
 }
 .restaurant__cartes__liens__carte__texte__icone {
   display: flex;
-  font-size: 70px;
-  margin-right: 40px;
+  font-size: 40px;
+  margin-right: 0px;
   color: transparent;
   -webkit-text-stroke: black 2px;
   opacity: 0.6;
+  padding-right: 10px;
 }
 .restaurant__cartes__liens__carte__texte__icone:hover {
   -webkit-background-clip: text;
@@ -420,28 +385,28 @@ a {
 }
 
 .footer {
-  height: 450px;
+  height: 300px;
   background-color: #353535;
 }
 .footer__titre {
   color: white;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 90px;
+  margin-left: 20px;
   padding-top: 50px;
   padding-bottom: 40px;
   font-family: "shrikhand";
-  font-size: 50px;
+  font-size: 30px;
 }
 .footer__menu {
-  margin-left: 90px;
+  margin-left: 20px;
   margin-top: 0;
   padding: 0;
 }
 .footer__menu__list {
   list-style: none;
   margin-top: 0;
-  font-size: 40px;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 .footer__menu__list__liens {
@@ -455,9 +420,68 @@ a {
   padding-right: 20px;
 }
 
-@media screen and (min-width: 900px) {
-  body {
-    background-color: red;
+@media screen and (min-width: 600px) {
+  .restaurants {
+    height: 800px;
+  }
+
+  .restaurant__cartes {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurant__cartes__liens {
+    width: 45%;
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fonctionnement__titre {
+    margin-left: 120px;
+  }
+
+  .fonctionnement__cartes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 150px;
+  }
+
+  .fonctionnement__carte {
+    width: 30%;
+    margin-right: 20px;
+  }
+
+  .fonctionnement {
+    height: 250px;
+  }
+
+  .restaurants {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .restaurant__cartes {
+    margin-left: 150px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer__menu {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
   }
 }
 

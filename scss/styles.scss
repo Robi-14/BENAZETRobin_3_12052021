@@ -25,7 +25,7 @@ a{ text-decoration: none; color: black;}
     visibility: hidden;
     &__lettre{
         color: #484848;
-        font-size: 80px;
+        font-size:50px;
         font-family: "shrikhand";
         letter-spacing: 2px;
         animation: flash linear 1.9s infinite;
@@ -47,6 +47,10 @@ a{ text-decoration: none; color: black;}
         @include flexcenter;
         height: 100px;
         position: relative;
+        width: 100%;
+        &__img{
+            width: 200px;
+        }
     }
     &__icone{
      position: absolute;
@@ -59,10 +63,10 @@ a{ text-decoration: none; color: black;}
 // Localisation
 #localisation{
     @include flexcenter;
-    font-size: 38px;
+    font-size: 25px;
     font-family: "roboto";
     background-color:#e1e1e1;
-    height: 130px;
+    height: 100px;
         
     #lieu{ margin-left:30px;}
 
@@ -74,25 +78,27 @@ a{ text-decoration: none; color: black;}
     justify-content: flex-start;
     flex-direction: column;
     width: 100%;
-    height:600px;
+    height:300px;
     background-color: #ededed;
    
    
         &__container{
-            max-width: 100%;
+
+            width: 90%;
             height: 550px;
             @include flexcenter;
             flex-direction: column;
+            
         }
   
         &__tittle{
-            font-size: 50px;
+            font-size: 25px;
             margin-bottom: 10px;
             text-align: center;
             max-width: 550px;
         }
         &__decouverte{
-            font-size: 40px;
+            font-size: 15px;
             text-align: center;
             max-width: 800px;
         }
@@ -102,7 +108,7 @@ a{ text-decoration: none; color: black;}
         @include flexcenter;
         }
         &__explorer{
-            width: 100%;
+            width: 50%;
             height: 100%;
             @include bouton;
                 &:hover{
@@ -114,21 +120,22 @@ a{ text-decoration: none; color: black;}
 .fonctionnement{
     display: flex;
     flex-direction: column;
-    padding-left:90px;
-    width: 80%;
-    height: 700px;
+    width: 90%;
+    height: 420px;
+    margin-left: 20px;
     
     
         
     &__titre{
         padding-top: 40px;
-        font-size: 30px;
+        font-size: 20px;
     }
     &__cartes{
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 500px;
+        height: 350px;
+        margin-bottom: 40px;
         
     } 
     &__carte{
@@ -136,9 +143,9 @@ a{ text-decoration: none; color: black;}
         display: flex;
         align-items: center;
         width: 100%;
-        height: 200px;
-        border-radius: 30px;
-        margin-bottom: 40px;
+        height: 80px;
+        border-radius: 20px;
+        margin-bottom: 20px;
         background: #ededed;
         box-shadow: #e1e1e1 5px 5px 13px 3px;
         
@@ -154,49 +161,49 @@ a{ text-decoration: none; color: black;}
     }
     &__nombre{
         @include flexcenter;
-        position: absolute;
-        left: 70px;
+        position: relative;
+        left: -10px;
         border: 2px transparent solid;
         background-color: $couleur-primaire;
         border-radius: 20px;
-        width: 40px;
-        height: 40px;
-        font-size: 30px;
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
     }
     &__icone{
-        margin-left:90px;
-        font-size: 40px;
+        margin-left:30px;
+        font-size: 25px;
         color: grey;
         
     }
     &__texte{
-        margin-left: 60px;
-        font-size: 30px;
+        margin-left: 20px;
+        font-size: 15px;
         font-weight:bold ;
     }
 }
 // Restaurants
 .restaurants{
-    height: 2800px;
+    height: 1400px;
     width: 100%;
     margin-top: 60px;
     background-color: #ededed;
-
+    
 
     &__titre{
-        margin-left: 90px;
-        font-size: 30px;
-        padding-top: 60px;
+        margin-left: 20px;
+        font-size: 20px;
+        padding-top: 40px;
     }
 }
 .restaurant{
     &__cartes{
         display: flex;
         flex-direction: column;
-        margin-left: 90px;
+        margin-left: 20px;
        
         &__liens{
-            height: 580px;
+            height: 250px;
             width: 90%;
             border-radius: 30px;
             margin-bottom: 60px;
@@ -207,54 +214,54 @@ a{ text-decoration: none; color: black;}
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                height: 580px;
+                height: 250px;
                 
                 &__pres{
-                    width: 100%;
-                    height: 400px;
+                    
                     &__img{
                     object-fit: cover;
                     width: 100%;
-                    height: 400px;
+                    height: 180px;
                     border-top-left-radius: 30px;
                     border-top-right-radius: 30px;
                     }
                     &__news{
-                        @include nouveaute;
-
-                    }
-                    &__news1{ 
-                        @include flexcenter;
-                        @include nouveaute;
-                        position: absolute;
-                        bottom: -400px;
-                        right: 110px;
-                        height: 80px;
-                        
-                    
+                    @include nouveaute;
+                    top:20px;
+                    left: 200px;
+                    position: relative;
                     }
                 }
+            &__preslapallette{
+                background-image: url(/img/La_palette_du_gout.jpg);
+                width: 100%;
+                height: 180px;
+                background-size: cover;
+                border-top-left-radius: 30px;
+                border-top-right-radius:30px ;
+                background-position-y: -50px;
+                background-repeat: no-repeat;
+            }
+            &__preslanote{
+                background-image: url(/img/La_note_enchantée.jpg);
+                width: 100%;
+                height: 180px;
+                background-size: cover;
+                border-top-left-radius: 30px;
+                border-top-right-radius:30px ;
+                background-position-y: -135px;
+                background-repeat: no-repeat;
+            }
+
 
                 &__img{
                     object-fit: cover;
-                    height: 400px;
+                    height: 180px;
                     border-top-left-radius: 30px;
                     border-top-right-radius: 30px;
                 }
-                &__news{
-                    @include nouveaute
-                }
-                &__news1{ 
-                    @include flexcenter;
-                    @include nouveaute;
-                    bottom: -400px;
-                    right: 110px;
-                    height: 80px;
-                    
-                   
-                }
                 &__texte{ 
-                    height:180px;
+                    height:60px;
                     width: 100%;
                     display: flex;
                     flex-direction: row;
@@ -262,19 +269,20 @@ a{ text-decoration: none; color: black;}
                     align-items: center;
                     
                     &__txt{
+                        
                         width: 100%;
                         height: 180px;
                         
                         &__titre{
                             margin-bottom: 0;
-                            font-size: 40px;
-                            margin-left: 20px;
-                            margin-top: 40px;
+                            font-size: 20px;
+                            margin-left: 10px;
+                            margin-top: 20px;
                         }
                         &__lieux{
-                            font-size: 40px;
-                            margin-top: 10px;
-                            margin-left: 20px;
+                            font-size: 20px;
+                            margin-top: 02px;
+                            margin-left: 10px;
                         } 
                     }
                     &__icone{
@@ -287,28 +295,28 @@ a{ text-decoration: none; color: black;}
 }
 // Footer
 .footer{
-    height: 450px;
+    height: 300px;
     background-color:#353535;
   
    &__titre{
         color: white;
         margin-top: 0;
         margin-bottom: 0;
-        margin-left: 90px;
+        margin-left: 20px;
         padding-top: 50px;
         padding-bottom: 40px;
         font-family: "shrikhand";
-        font-size: 50px;
+        font-size: 30px;
     }
     &__menu{
-        margin-left:  90px;
+        margin-left:  20px;
         margin-top: 0;
         padding: 0;
         
         &__list{
             list-style: none;
             margin-top: 0;
-            font-size: 40px;
+            font-size: 20px;
             margin-bottom: 15px;
            
             &__liens{
@@ -326,15 +334,46 @@ a{ text-decoration: none; color: black;}
 
     }
 }
-
-
-
-@media screen and (min-width:900px){
-    body{background-color: red;}
+@media  screen and (min-width: 600px ) {
+    .restaurants{height: 800px;}
+    .restaurant__cartes{
+       flex-direction: row;
+       flex-wrap: wrap;
+       &__liens{
+           width: 45%;
+           margin-right: 20px;
+       }
+    }
+   .footer{
+    @include flexcenter;
+    flex-direction:column;
+    &__menu{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+    }
 }
+    
+}
+@media screen and (min-width: 1024px){
+.fonctionnement{@include flexcenter}
+.fonctionnement__titre{margin-left:120px;}
+.fonctionnement__cartes{flex-direction: row;
+flex-wrap: wrap;margin-left: 150px;}
+.fonctionnement__carte{width: 30%;margin-right: 20px;}
+.fonctionnement{ height: 250px;}
+
+.restaurants{ @include flexcenter;
+flex-direction: column;}
+.restaurant__cartes{ margin-left: 150px;}
 
 
 
+
+
+
+}
 
 
 

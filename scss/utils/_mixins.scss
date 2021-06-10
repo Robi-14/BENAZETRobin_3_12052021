@@ -40,17 +40,22 @@
 }
 
 @mixin nouveaute {
-    @include flexcenter;
-    
-    height: 40px;
-    background-color: $couleur-tertiaire;
-    width:100px ;
-    
-   
+    width:100% ;
+    display: block;
+    position: relative;
+    margin: 0;
 
     &__txt{
         font-size: 20px;
         color:darken($couleur-tertiaire, $amount: 35);
+        padding: 10px;
+        text-align: center;
+        width: 100px;
+        margin: 0;
+        right: 25px;
+        top: 15px;
+        position: absolute;
+        background-color: $couleur-tertiaire;
     }
     
 }

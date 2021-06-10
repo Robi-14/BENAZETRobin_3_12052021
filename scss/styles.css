@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @keyframes flash {
   0% {
     color: #9356DC;
@@ -306,21 +305,24 @@ a {
   border-top-right-radius: 30px;
 }
 .restaurant__cartes__liens__carte__pres__news {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  background-color: #99e2d0;
-  width: 100px;
-  right: 0%;
-  position: absolute;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0;
 }
 .restaurant__cartes__liens__carte__pres__news__txt {
   font-size: 20px;
   color: #2c9c81;
+  padding: 10px;
+  text-align: center;
+  width: 100px;
+  margin: 0;
+  right: 25px;
+  top: 15px;
+  position: absolute;
+  background-color: #99e2d0;
 }
 .restaurant__cartes__liens__carte__preslapallette {
-  background-image: url(BENAZETROBIN_3_12052021/img/La_palette_du_gout.jpg);
   width: 100%;
   height: 180px;
   background-size: cover;
@@ -330,7 +332,6 @@ a {
   background-repeat: no-repeat;
 }
 .restaurant__cartes__liens__carte__preslanote {
-  background-image: url(BENAZETROBIN_3_12052021/img/La_note_enchantée.jpg);
   width: 100%;
   height: 180px;
   background-size: cover;

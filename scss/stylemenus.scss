@@ -56,7 +56,7 @@ a{ text-decoration: none; color: black;}
 }
 .presentationlapalette{
     @include presentation;
-    background-image: url(/img/La_palette_du_gout.jpg);
+    background-image: url(/BENAZETRobin_3_12052021/img/La_palette_du_gout.jpg);
     background-position-x:-30px ;
     margin:0;
     height:250px;
@@ -65,21 +65,21 @@ a{ text-decoration: none; color: black;}
 }
 .presentationenchanté{
 @include presentation;
-background-image: url(/img/La_note_enchantée.jpg);
+background-image: url(/BENAZETRobin_3_12052021/img/La_note_enchantée.jpg);
 margin:0;
 height: 250px;
 background-position-y:-100px; 
 }
 .presentationfrancaise{
     @include presentation;
-    background-image: url(/img/A_la_francaise.jpg);
+    background-image: url(/BENAZETRobin_3_12052021/img/A_la_francaise.jpg);
     margin: 0;
     height: 250px;
     background-position-y:-05px; 
 }
 .presentationlesdelices{
     @include presentation;
-    background-image: url(/img/Le_delice_des_sens.jpg);
+    background-image: url(/BENAZETRobin_3_12052021/img/Le_delice_des_sens.jpg);
     margin:0;
     height: 250px;
 }

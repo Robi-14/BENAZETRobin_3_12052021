@@ -416,7 +416,7 @@ a {
   padding-right: 20px;
 }
 .footer__menu__list__liens__iconehand {
-  font-size: 25px;
+  font-size: 13px;
   padding-right: 20px;
 }
 
@@ -432,6 +432,19 @@ a {
   .restaurant__cartes__liens {
     width: 45%;
     margin-right: 20px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer__menu {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -469,19 +482,6 @@ a {
 
   .restaurant__cartes {
     margin-left: 150px;
-  }
-
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .footer__menu {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    justify-content: space-between;
   }
 }
 
